@@ -28,7 +28,6 @@ public class EnemyMove : MonoBehaviour {
 
             timeSinceLastMove = 0;
             EnemyTransform.Translate(direction);
-            Debug.Log(this.transform.position);
         }
 
 	}
