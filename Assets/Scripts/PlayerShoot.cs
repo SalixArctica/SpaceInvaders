@@ -4,13 +4,8 @@ using UnityEngine;
 
 public class PlayerShoot : MonoBehaviour
 {
-
-
-
-
-
-
     public GameObject bulletPrefab;
+    
 
     // Use this for initialization
     void Start()
@@ -24,7 +19,7 @@ public class PlayerShoot : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             GameObject newBullet = GameObject.Instantiate(bulletPrefab, this.transform.position, new Quaternion());
-            newBullet.GetComponent<BulletFly>().direction = new Vector2(0, 1);
+            newBullet.GetComponent<BulletFly>().direction = new Vector2(0, 10);
         }
 
     }

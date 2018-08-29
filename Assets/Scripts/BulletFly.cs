@@ -5,6 +5,7 @@ using UnityEngine;
 public class BulletFly : MonoBehaviour {
 
     public Vector2 direction;
+    private float speed = 1;
 
 	// Use this for initialization
 	void Start () {
@@ -13,6 +14,6 @@ public class BulletFly : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        this.transform.Translate(direction * Time.deltaTime);
+        this.transform.Translate(direction * Time.deltaTime * speed);
 	}
 }
